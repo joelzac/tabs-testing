@@ -1,0 +1,76 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #111;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 2px solid #ddd;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs .tab {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 15px 25px 12px 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #444;
+  border-bottom: 3px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+.tabs .tab.active,
+.tabs .tab[aria-selected="true"] {
+  color: #111;
+  border-bottom-color: #111;
+  font-weight: 600;
+}
+
+.tabs .tab:disabled {
+  color: #bbb;
+  cursor: not-allowed;
+}
+
+.tab-panel {
+  margin-top: 2.5rem;
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0;}
+  to {opacity: 1;}
+}
+
+.box {
+  background: #111;
+  color: #fff;
+  margin-bottom: 1.8rem;
+  padding: 2.2rem 1rem;
+  border-radius: 24px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .tabs .tab {
+    padding: 9px 8px;
+    font-size: 1rem;
+  }
+  .box {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+}

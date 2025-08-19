@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs test</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+
+    <main>
+    <nav aria-label="Tabs">
+      <ul class="tabs" role="tablist">
+        <li><button class="tab active" role="tab" aria-selected="true" aria-controls="tab1" id="tab1-btn">First Tab</button></li>
+        <li><button class="tab" role="tab" aria-selected="false" aria-controls="tab2" id="tab2-btn">Second Tab</button></li>
+        <li><button class="tab" role="tab" aria-selected="false" aria-controls="tab3" id="tab3-btn">Third Tab</button></li>
+        <li><button class="tab" role="tab" aria-selected="false" aria-controls="tab4" id="tab4-btn">Fourth Tab</button></li>
+      </ul>
+    </nav>
+
+    <section id="tab1" class="tab-panel active" role="tabpanel" aria-labelledby="tab1-btn">
+      <div class="box">
+        <p>First Tab content to be displayed here.</p>
+      </div>
+      <p>Add some dummy content or just add a simple text showing the tab</p>
+    </section>
+
+    <section id="tab2" class="tab-panel" role="tabpanel" aria-labelledby="tab2-btn" hidden>
+      <div class="box">
+        <p>Second Tab content to be displayed here.</p>
+      </div>
+      <p>Some dummy content for the second tab</p>
+    </section>
+
+    <section id="tab3" class="tab-panel" role="tabpanel" aria-labelledby="tab3-btn" hidden>
+      <div class="box">
+        <p>Third Tab content to be displayed here.</p>
+      </div>
+      <p>Some dummy content for the third tab</p>
+    </section>
+
+    <section id="tab4" class="tab-panel" role="tabpanel" aria-labelledby="tab4-btn" hidden>
+      <div class="box">
+        <p>Fourth Tab content to be displayed here.</p>
+      </div>
+      <p>Some dummy content for the fourth tab</p>
+    </section>
+  </main>
+    
+</body>
+</html>
